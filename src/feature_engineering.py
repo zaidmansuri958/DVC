@@ -91,7 +91,7 @@ def save_data(df:pd.DataFrame,file_path:str):
 
 def main():
     try:
-        params=load_params(params_path='params.yml')
+        params=load_params(params_path='params.yaml')
         max_features=params['feature_engineering']['max_features']
 
         train_data=load_data("./data/interim/train_processed.csv")
